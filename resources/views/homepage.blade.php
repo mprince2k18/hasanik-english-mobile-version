@@ -166,7 +166,6 @@
         {{-- TODO --}}
     </div>
 
-
     {{-- CONTACT --}}
 
     <div class="card card-fixed mb-n5" data-card-height="350">
@@ -181,9 +180,6 @@
 <div class="content">
 <h1>Contact Us</h1>
 <p>
-
-
-
 
 <div class="divider mt-4"></div>
 
@@ -221,6 +217,5 @@
 </a>
 </div>
 </div>
-
 
 @endsection
