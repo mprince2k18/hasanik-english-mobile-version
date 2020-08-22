@@ -94,7 +94,6 @@
     <div class="divider divider-margins"></div>
 
     
-
 {{-- ABOUT --}}
 
     <div class="row mb-0">
