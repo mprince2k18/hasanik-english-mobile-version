@@ -93,7 +93,6 @@
     </div>
     <div class="divider divider-margins"></div>
 
-    
 {{-- ABOUT --}}
 
     <div class="row mb-0">
@@ -114,7 +113,6 @@
     </div>
     </div>
     </div>
-
 
     {{-- TODO:: TEAM --}}
     <div class="single-slider owl-carousel owl-no-dots">
