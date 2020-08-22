@@ -96,10 +96,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.enableds.com/products/appkit/page-store-home.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Aug 2020 18:02:15 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="apple-mobile-web-app-capable" content="yes">
