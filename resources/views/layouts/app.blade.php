@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/fonts/css/fontawesome-all.min.css') }}">
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-
+    {{-- mix --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
