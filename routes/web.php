@@ -10,6 +10,8 @@ Route::get('/', 'HomeController@index')->name('homepage');
 
 Auth::routes(['register' => false, 'login' => false]);
 
+
+// test
 Route::get('/test', function () {
     return 'hi';
 });
