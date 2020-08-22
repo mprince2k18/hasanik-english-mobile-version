@@ -128,7 +128,9 @@
         <div id="page">
 
             @yield('content')
+            {{-- Vue compo --}}
             <App></App>
+            {{-- Vue compo --}}
         </div>
     </div>
     <script type="text/javascript" src="{{ asset('frontend/scripts/jquery.js') }}"></script>
