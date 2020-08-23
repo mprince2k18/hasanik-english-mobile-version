@@ -30,11 +30,13 @@
 <div class="page-content">
     <div class="single-slider owl-carousel owl-no-dots">
 
+
         {{-- TODO COURSE LOOP--}}
+        @foreach ($courses as $course)
         <div class="card card-style bg-19" data-card-height="300">
             <a href="#">
                 <div class="card-bottom mb-3 ml-3 mr-3">
-                    <h1 class="color-white font-800 mb-n2">iPhone XL</h1>
+                    <h1 class="color-white font-800 mb-n2">dsadasd</h1>
                     <p class="color-white font-14 mb-2 opacity-60">
                         $1200
                     </p>
@@ -42,7 +44,8 @@
             </a>
             <div class="card-overlay bg-black opacity-60"></div>
         </div>
-        <div class="card card-style bg-18" data-card-height="300">
+        @endforeach
+        {{-- <div class="card card-style bg-18" data-card-height="300">
             <div class="card-top">
                 <a href="#" data-menu="menu-heart"
                     class="icon icon-s bg-white color-red-dark rounded-xl mt-3 mr-3 float-right"><i
@@ -75,7 +78,7 @@
                 </p>
             </div>
             <div class="card-overlay bg-black opacity-60"></div>
-        </div>
+        </div> --}}
         {{-- TODO --}}
     </div>
     <div class=" mb-3">
@@ -84,10 +87,12 @@
     <div class="double-slider owl-carousel owl-no-dots mb-4">
 
         {{-- TODO:: BLOG LOOP --}}
+        @foreach ($blogs as $blog)
         <div>
             <div class="card m-0 card-style bg-20" data-card-height="250"></div>
             <h4>Studio <br>Microphone</h4>
         </div>
+        @endforeach
         {{-- TODO:: BLOG LOOP --}}
       
     </div>
@@ -118,6 +123,8 @@
     <div class="single-slider owl-carousel owl-no-dots">
 
         {{-- TODO COURSE LOOP--}}
+        @foreach ($teams as $team)
+            
         <div class="card card-style bg-19" data-card-height="300">
             <a href="#">
                 <div class="card-bottom mb-3 ml-3 mr-3">
@@ -129,7 +136,8 @@
             </a>
             <div class="card-overlay bg-black opacity-60"></div>
         </div>
-        <div class="card card-style bg-18" data-card-height="300">
+        @endforeach
+        {{-- <div class="card card-style bg-18" data-card-height="300">
             <div class="card-top">
                 <a href="#" data-menu="menu-heart"
                     class="icon icon-s bg-white color-red-dark rounded-xl mt-3 mr-3 float-right"><i
@@ -162,7 +170,7 @@
                 </p>
             </div>
             <div class="card-overlay bg-black opacity-60"></div>
-        </div>
+        </div> --}}
         {{-- TODO --}}
     </div>
 

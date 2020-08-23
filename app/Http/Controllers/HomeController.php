@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
+use GuzzleHttp\Message\Response;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('homepage');
+        /**
+        * COURSES
+        */
+
+        $courses = json_decode(file_get_contents('https://hasanikenglish.com/api/courses'), true);
+        $blogs = json_decode(file_get_contents('https://hasanikenglish.com/api/blogs'), true);
+        $teams = json_decode(file_get_contents('https://hasanikenglish.com/api/team'), true);
+
+        return view('homepage', compact('courses','blogs','teams'));
+       
     }
+
+    //END
 }
