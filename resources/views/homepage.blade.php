@@ -10,8 +10,8 @@
 </div>
 <div id="footer-bar" class="footer-bar-6">
     <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Courses</span></a>
-    <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Blogs</span></a>
-    <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+    <a href="index-pages.html" class=""><i class="fa fa-file"></i><span>Blogs</span></a>
+    <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
     <a href="index-projects.html"><i class="fa fa-camera"></i><span>Enrollment</span></a>
     <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
 </div>
@@ -32,13 +32,13 @@
 
 
         {{-- TODO COURSE LOOP--}}
-        @foreach ($courses as $course)
-        <div class="card card-style bg-19" data-card-height="300">
+        @foreach ($courses['data'] as $course)
+        <div class="card card-style bg-19" data-card-height="300" style="background-image:url('{{ $course['thumbnail'] }}')">
             <a href="#">
                 <div class="card-bottom mb-3 ml-3 mr-3">
-                    <h1 class="color-white font-800 mb-n2">dsadasd</h1>
+                    <h1 class="color-white font-800 mb-n2">{{ $course['name'] }}</h1>
                     <p class="color-white font-14 mb-2 opacity-60">
-                        $1200
+                        ${{$course['price']}}
                     </p>
                 </div>
             </a>
@@ -89,8 +89,9 @@
         {{-- TODO:: BLOG LOOP --}}
         @foreach ($blogs as $blog)
         <div>
-            <div class="card m-0 card-style bg-20" data-card-height="250"></div>
-            <h4>Studio <br>Microphone</h4>
+            <div class="card m-0 card-style bg-20" style="background-image:url('{{ $blog['thumbnail'] }}')" data-card-height="250"></div>
+            <h4>{{ $blog['title'] }}</h4>
+            <span>{{ $blog['user']['name'] }}</span>
         </div>
         @endforeach
         {{-- TODO:: BLOG LOOP --}}

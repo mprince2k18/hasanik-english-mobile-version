@@ -32,6 +32,7 @@
         </div>
 
         <div id="page">
+            
 
             @yield('content')
             {{-- Vue compo --}}
