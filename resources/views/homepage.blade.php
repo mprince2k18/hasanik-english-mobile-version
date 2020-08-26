@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="header header-fixed header-logo-center header-auto-show">
-    <a href="index.html" class="header-title">Store</a>
+    <a href="index.html" class="header-title">Hasanik English</a>
     <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
     <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
     <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
@@ -16,7 +16,7 @@
     <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
 </div>
 <div class="page-title page-title-fixed">
-    <h1>Store</h1>
+    <h1>Hasanik English</h1>
     <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
             class="fa fa-share-alt"></i></a>
     <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i
@@ -53,40 +53,6 @@
             <div class="card-overlay bg-black opacity-60"></div>
         </div>
         @endforeach
-        {{-- <div class="card card-style bg-18" data-card-height="300">
-            <div class="card-top">
-                <a href="#" data-menu="menu-heart"
-                    class="icon icon-s bg-white color-red-dark rounded-xl mt-3 mr-3 float-right"><i
-                        class="fa fa-heart"></i></a>
-                <a href="#" data-menu="menu-cart"
-                    class="icon icon-s bg-white color-black rounded-xl mt-3 mr-2 float-right"><i
-                        class="fa fa-shopping-bag"></i></a>
-            </div>
-            <div class="card-bottom mb-3 ml-3 mr-3">
-                <h1 class="color-white font-800 mb-n2">AirPods Pro</h1>
-                <p class="color-white font-14 mb-2 opacity-60">
-                    In Ear Headset with Wireless Charging Case
-                </p>
-            </div>
-            <div class="card-overlay bg-black opacity-60"></div>
-        </div>
-        <div class="card card-style bg-17" data-card-height="300">
-            <div class="card-top">
-                <a href="#" data-menu="menu-heart"
-                    class="icon icon-s bg-white color-red-dark rounded-xl mt-3 mr-3 float-right"><i
-                        class="fa fa-heart"></i></a>
-                <a href="#" data-menu="menu-cart"
-                    class="icon icon-s bg-white color-black rounded-xl mt-3 mr-2 float-right"><i
-                        class="fa fa-shopping-bag"></i></a>
-            </div>
-            <div class="card-bottom mb-3 ml-3 mr-3">
-                <h1 class="color-white font-800 mb-n2">Beats Studio Headset</h1>
-                <p class="color-white font-14 mb-2 opacity-60">
-                    Over the hear high fidelity headphones.
-                </p>
-            </div>
-            <div class="card-overlay bg-black opacity-60"></div>
-        </div> --}}
         {{-- TODO --}}
     </div>
     <div class=" mb-3">
