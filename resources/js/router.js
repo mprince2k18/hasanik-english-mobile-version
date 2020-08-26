@@ -7,7 +7,9 @@ Vue.use(VueRouter)
 export default new VueRouter({
     routes: [
         {
-            
+            path: '/t/courses',
+            component: CourseList,
+            name: 'courses'
         },
     ],
     mode: 'history'

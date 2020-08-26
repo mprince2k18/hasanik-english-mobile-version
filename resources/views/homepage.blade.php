@@ -1,32 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="header header-fixed header-logo-center header-auto-show">
-    <a href="index.html" class="header-title">Hasanik English</a>
-    <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
-    <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
-    <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
-    <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
-</div>
-<div id="footer-bar" class="footer-bar-6">
-    <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Courses</span></a>
-    <a href="index-pages.html" class=""><i class="fa fa-file"></i><span>Blogs</span></a>
-    <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
-    <a href="index-projects.html"><i class="fa fa-camera"></i><span>Enrollment</span></a>
-    <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
-</div>
-<div class="page-title page-title-fixed">
-    <h1>Hasanik English</h1>
-    <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
-            class="fa fa-share-alt"></i></a>
-    <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i
-            class="fa fa-moon"></i></a>
-    <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i
-            class="fa fa-lightbulb color-yellow-dark"></i></a>
-    <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i
-            class="fa fa-bars"></i></a>
-</div>
-<div class="page-title-clear"></div>
+
+
 <div class="page-content">
     <div class="single-slider owl-carousel owl-no-dots">
 
@@ -118,7 +94,7 @@
 
     {{-- CONTACT --}}
 
-    <div class="card card-fixed mb-n5" data-card-height="350">
+    <div class="card mb-n5" data-card-height="350">
         <div class="map-full">
         <iframe src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
         </div>

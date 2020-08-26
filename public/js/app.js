@@ -1937,9 +1937,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
+  },
+  data: function data() {
+    return {
+      courses: []
+    };
+  },
+  methods: {
+    getData: function getData() {
+      var _this = this;
+
+      axios.get('https://hasanikenglish.com/api/courses').then(function (response) {
+        return _this.courses = response.data;
+      });
+    }
+  },
+  created: function created() {
+    this.getData();
   }
 });
 
@@ -37551,14 +37611,121 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "page-content" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "tab-content", attrs: { id: "tab-1" } },
+        [
+          _vm._l(_vm.courses.data, function(course) {
+            return _c(
+              "div",
+              { key: course.id, staticClass: "card card-style" },
+              [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: { src: course.thumbnail, alt: course.name }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "content" }, [
+                  _c("h1", [_vm._v(_vm._s(course.name))]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "opacity-80 text-uppercase font-16 mt-n2 font-600 mb-1"
+                    },
+                    [_vm._v("৳" + _vm._s(course.price))]
+                  ),
+                  _vm._v(" "),
+                  _vm._m(1, true)
+                ])
+              ]
+            )
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "divider divider-margins" })
+        ],
+        2
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", {
+      staticClass: "menu menu-box-left rounded-0",
+      attrs: {
+        id: "menu-main",
+        "data-menu-load": "menu-main.html",
+        "data-menu-width": "280",
+        "data-menu-active": "nav-pages"
+      }
+    }),
+    _vm._v(" "),
+    _c("div", {
+      staticClass: "menu menu-box-bottom rounded-m",
+      attrs: {
+        id: "menu-share",
+        "data-menu-load": "menu-share.html",
+        "data-menu-height": "370"
+      }
+    }),
+    _vm._v(" "),
+    _c("div", {
+      staticClass: "menu menu-box-bottom rounded-m",
+      attrs: {
+        id: "menu-colors",
+        "data-menu-load": "menu-colors.html",
+        "data-menu-height": "480"
+      }
+    })
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("hi")])])
+    return _c(
+      "div",
+      {
+        staticClass:
+          "tab-controls mr-3 ml-3 tabs-round tab-animated tabs-medium tabs-rounded clearfix shadow-xl mb-4",
+        attrs: {
+          "data-tab-items": "2",
+          "data-tab-active": "bg-highlight activated color-white"
+        }
+      },
+      [
+        _c(
+          "a",
+          {
+            staticClass: "font-12 w-100",
+            attrs: { href: "#", "data-tab-active": "", "data-tab": "tab-1" }
+          },
+          [_vm._v("All Courses")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "d-flex" }, [
+      _c("div", [
+        _c(
+          "a",
+          {
+            staticClass:
+              "btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left ",
+            attrs: { href: "#" }
+          },
+          [_vm._v("Know More")]
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -53025,7 +53192,11 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  routes: [{}],
+  routes: [{
+    path: '/t/courses',
+    component: _components_CourseList__WEBPACK_IMPORTED_MODULE_2__["default"],
+    name: 'courses'
+  }],
   mode: 'history'
 }));
 
