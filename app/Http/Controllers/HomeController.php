@@ -34,6 +34,7 @@ class HomeController extends Controller
         $teams      = json_decode(file_get_contents('https://hasanikenglish.com/api/team'), true);
 
         return view('homepage', compact('courses','blogs','teams'));
+        // return $courses;
 
     }
 
