@@ -35,6 +35,14 @@
         @foreach ($courses['data'] as $course)
         <div class="card card-style bg-19" data-card-height="300" style="background-image:url('{{ $course['thumbnail'] }}')">
             <a href="#">
+
+
+              <div class="card-top">
+                  <a href="#" data-menu="menu-cart"
+                      class="icon icon-s bg-white color-black rounded-xl p-2 mt-3 mr-2 float-right">ENROLL</a>
+              </div>
+
+
                 <div class="card-bottom mb-3 ml-3 mr-3">
                     <h1 class="color-white font-800 mb-n2">{{ $course['name'] }}</h1>
                     <p class="color-white font-14 mb-2 opacity-60">
@@ -95,7 +103,7 @@
         </div>
         @endforeach
         {{-- TODO:: BLOG LOOP --}}
-      
+
     </div>
     <div class="divider divider-margins"></div>
 
@@ -125,53 +133,20 @@
 
         {{-- TODO COURSE LOOP--}}
         @foreach ($teams as $team)
-            
+
         <div class="card card-style bg-19" data-card-height="300">
             <a href="#">
                 <div class="card-bottom mb-3 ml-3 mr-3">
-                    <h1 class="color-white font-800 mb-n2">Mohammad Prince</h1>
+                    <h1 class="color-white font-800 mb-n2">{{ $team['name'] }}</h1>
                     <p class="color-white font-14 mb-2 opacity-60">
-                        Software Engineer
+                        {{ $team['position'] }}
                     </p>
                 </div>
             </a>
             <div class="card-overlay bg-black opacity-60"></div>
         </div>
         @endforeach
-        {{-- <div class="card card-style bg-18" data-card-height="300">
-            <div class="card-top">
-                <a href="#" data-menu="menu-heart"
-                    class="icon icon-s bg-white color-red-dark rounded-xl mt-3 mr-3 float-right"><i
-                        class="fa fa-heart"></i></a>
-                <a href="#" data-menu="menu-cart"
-                    class="icon icon-s bg-white color-black rounded-xl mt-3 mr-2 float-right"><i
-                        class="fa fa-shopping-bag"></i></a>
-            </div>
-            <div class="card-bottom mb-3 ml-3 mr-3">
-                <h1 class="color-white font-800 mb-n2">AirPods Pro</h1>
-                <p class="color-white font-14 mb-2 opacity-60">
-                    In Ear Headset with Wireless Charging Case
-                </p>
-            </div>
-            <div class="card-overlay bg-black opacity-60"></div>
-        </div>
-        <div class="card card-style bg-17" data-card-height="300">
-            <div class="card-top">
-                <a href="#" data-menu="menu-heart"
-                    class="icon icon-s bg-white color-red-dark rounded-xl mt-3 mr-3 float-right"><i
-                        class="fa fa-heart"></i></a>
-                <a href="#" data-menu="menu-cart"
-                    class="icon icon-s bg-white color-black rounded-xl mt-3 mr-2 float-right"><i
-                        class="fa fa-shopping-bag"></i></a>
-            </div>
-            <div class="card-bottom mb-3 ml-3 mr-3">
-                <h1 class="color-white font-800 mb-n2">Beats Studio Headset</h1>
-                <p class="color-white font-14 mb-2 opacity-60">
-                    Over the hear high fidelity headphones.
-                </p>
-            </div>
-            <div class="card-overlay bg-black opacity-60"></div>
-        </div> --}}
+
         {{-- TODO --}}
     </div>
 
